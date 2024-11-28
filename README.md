@@ -8,7 +8,7 @@ Welcome to **inMeet**! ⏰ A modern and **streamlined meeting scheduling tool** 
 
 Experience **inMeet** in action! 🎉 Check out the live version of the application:
 
-🔗 **Live URL**: [inMeet Live Demo](http://localhost:3000)
+🔗 **Live URL**: [inMeet Live Demo](https://inmeet-nine.vercel.app/)
 
 Feel free to explore, create your own event types, and try scheduling meetings. It's all yours to test! 🚀
 

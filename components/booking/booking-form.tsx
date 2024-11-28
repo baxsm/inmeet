@@ -77,7 +77,7 @@ const BookingForm: FC<BookingFormProps> = ({
     onSuccess: () => {
       router.push("/success");
       form.reset();
-      toast.loading("Successfully created booking", { id: "booking" });
+      toast.success("Successfully created booking", { id: "booking" });
     },
     onError: (error) => {
       toast.error(error.message ?? "Something went wrong", { id: "booking" });

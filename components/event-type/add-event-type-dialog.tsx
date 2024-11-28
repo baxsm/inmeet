@@ -40,7 +40,11 @@ import {
 } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
 
-const AddEventTypeDialog: FC = () => {
+interface AddEventTypeDialogProps {
+  username: string
+}
+
+const AddEventTypeDialog: FC<AddEventTypeDialogProps> = ({username}) => {
   const form = useForm<AddEventTypeSchemaType>({
     resolver: zodResolver(addEventTypeSchema),
     defaultValues: {
@@ -118,7 +122,7 @@ const AddEventTypeDialog: FC = () => {
                   <FormControl>
                     <div className="flex">
                       <span className="inline-flex items-center px-3 rounded-l-lg border border-muted bg-accent">
-                        inMeet.com/
+                        inMeet.com/{username}/
                       </span>
                       <Input
                         className="rounded-l-none"

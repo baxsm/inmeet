@@ -1,8 +1,16 @@
+import { getUsername } from "@/actions/event-type";
 import AddEventTypeDialog from "@/components/event-type/add-event-type-dialog";
 import EventTypeCards from "@/components/event-type/event-type-cards";
+import { notFound } from "next/navigation";
 import { FC } from "react";
 
 const EventType: FC = async () => {
+  const username = await getUsername();
+
+  if(!username) {
+    notFound()
+  }
+
   return (
     <div className="flex flex-col gap-8">
       <div className="flex md:flex-row gap-4 md:items-center justify-between px-0">
@@ -12,7 +20,7 @@ const EventType: FC = async () => {
             Manage all of your event types
           </p>
         </div>
-        <AddEventTypeDialog />
+        <AddEventTypeDialog username={username} />
       </div>
       <EventTypeCards />
     </div>
