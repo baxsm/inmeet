@@ -37,7 +37,7 @@ const NylasGrantId: FC = async () => {
       <Card className="w-full">
         <CardHeader>
           <div className="flex items-center justify-center mb-2">
-            <Logo isLink={false} />
+            <Logo />
           </div>
           <CardTitle>You are almost done!</CardTitle>
           <CardDescription>
