@@ -121,12 +121,12 @@ const AddEventTypeDialog: FC<AddEventTypeDialogProps> = ({username}) => {
                   <FormLabel>Url</FormLabel>
                   <FormControl>
                     <div className="flex">
-                      <span className="inline-flex items-center px-3 rounded-l-lg border border-muted bg-accent">
+                      <span className="inline-flex items-center whitespace-nowrap px-3 rounded-l-lg border border-muted bg-accent">
                         inMeet.com/{username}/
                       </span>
                       <Input
                         className="rounded-l-none"
-                        placeholder="Enter your username"
+                        placeholder="Enter your url"
                         {...field}
                       />
                     </div>
